@@ -16,7 +16,7 @@ import java.io.Serializable;
         , @NamedQuery(name = "Customer.findByActive", query = "SELECT c FROM Customer c WHERE c.active = :active")
         , @NamedQuery(name = "Customer.findByCreateDate", query = "SELECT c FROM Customer c WHERE c.createDate = :createDate")
         , @NamedQuery(name = "Customer.findByLastUpdate", query = "SELECT c FROM Customer c WHERE c.lastUpdate = :lastUpdate")
-        , @NamedQuery(name = "Customer.findAllCustomerSortedByLastName", query = "SELECT  c FROM Customer c order by c.lastName asc ")
+        , @NamedQuery(name = "Customer.findAllCustomerByLastName", query = "SELECT  c FROM Customer c order by c.lastName asc ")
 })
 
 @NoArgsConstructor
